@@ -20,6 +20,6 @@ app.get('/login', (req, res) => {
 
 app.use(express.static(path.resolve(__dirname, './public')));
 
-app.listen(3050, () =>{
+app.listen(process.env.PORT || 3050, () =>{
     console.log("Servidor corriendo");
 });
